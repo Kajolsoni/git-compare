@@ -50,7 +50,7 @@ return (
 <div style={{marginBottom:'10px'}}>
     <div className="card p-3">
         <div className="d-flex align-items-center">
-            <div className="image"> <img src={avatar} class="rounded" width="155"/> </div>
+            <div className="image"> <img src={avatar} class="rounded" width="155" alt=''/> </div>
             <div className="ml-3 w-100">
                 <h4 className="mb-0 mt-0">{props.username}</h4> <span>{name}</span>
                 <div className="p-2 mt-2 bg-secondary d-flex justify-content-between rounded text-white stats">
