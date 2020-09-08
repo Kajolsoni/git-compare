@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.dynamic-delete-button {
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  font-size: 24px;
+  color: #999;
+  transition: all 0.3s;
+}
+.dynamic-delete-button:hover {
+  color: #777;
+}
+.dynamic-delete-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+  [data-theme="dark"] .dynamic-delete-button {
+    color: rgba(255,255,255,.45);
+  }
+  [data-theme="dark"] .dynamic-delete-button:hover {
+    color: rgba(255,255,255,.65);
+  }
