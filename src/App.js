@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import './index.css';
 
-
+import Line from './chart';
 import './App.css';
 import 'antd/dist/antd.css';
 import { Form, Input, Button } from 'antd';
@@ -43,9 +43,19 @@ const Card=(props)=>{
     setFollowing(data.following);
 
     console.log(data)
+    let data2=[ {
+      title: props.username,
+      borderColor: '#fe4849',
+      values: [37, 15, 90, 57],
+  },
+  {
+      title: 'User2',
+      borderColor: '#01b6f5',
+      values: [18, 39, 15, 38]
+  },]
+    ReactDOM.render(<div ><Line dataset={data2}/></div>,document.getElementById('cht'));
   });
 
-  
 return (
 <div style={{marginBottom:'10px'}}>
     <div className="card p-3">
@@ -70,6 +80,7 @@ return (
 const App = () => {
   const onFinish = values => {
   let element=[];
+  
 for(var i=0;i<values.usernames.length;i++)
 element.push(<Card username={values.usernames[i]}/>);
 ReactDOM.render(element,document.getElementById('out'))
