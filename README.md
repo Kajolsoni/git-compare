@@ -6,7 +6,7 @@
  - Node js Installation
  - Create-react-app installation
  - React Dependency installation
- - Ant design module instation
+ - Ant design module installation
  
 ## Day 2( 8th September)
 #### User Interface Design
