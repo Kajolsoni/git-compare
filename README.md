@@ -30,4 +30,4 @@
  - Deployed on netlify( https://kajols.netlify.app)
  
 ## Final output Snap
-[!github Logo](./screen.png)
+![Output Snap](image.png)
