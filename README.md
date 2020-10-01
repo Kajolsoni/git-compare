@@ -1,4 +1,8 @@
 # Github Profile Compare
+
+This is an application used for Github Profile comparison. It is created using Javascript.
+
+
  Day Wise Workflow
  
  ## Day 1( 7th September)
